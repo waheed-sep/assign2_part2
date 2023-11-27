@@ -1,0 +1,14 @@
+{
+  "name": "assign1_part1",
+  "version": "1.0.0",
+  "description": "Part 1: Docker file Creation, GitHub and Docker Hub Integration",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Muhammad Waheed Khan",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
