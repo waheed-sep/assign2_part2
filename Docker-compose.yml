@@ -1,0 +1,48 @@
+# # services:
+# #   web:
+# #     image: nginx
+# #     ports:
+# #     - 8080:80
+# #   database:
+# #     image: mongo
+
+# services:
+#   web:
+#     image: nginx:latest
+#     ports:
+#       - "8080:80"  # Map container port 80 to host port 8080
+#     networks:
+#       - my_network  # Attach to custom network
+
+#   database:
+#     image: mysql:latest
+#     environment:
+#       MYSQL_ROOT_PASSWORD: example_password
+#       MYSQL_DATABASE: my_database
+#       MYSQL_USER: my_user
+#       MYSQL_PASSWORD: my_password
+#     networks:
+#       - my_network  # Attach to custom network
+
+# networks:
+#   my_network:  # Define custom network
+#     driver: bridge
+
+# version: "1.0"
+services:
+  web:
+    build: .
+      # context: contextPath
+      # dockerfile: Dockerfile
+    ports:
+      - "8000:5000"
+
+  redis:
+    image: "redis"
+
+  # db:
+  #   image: "postgres"
+  #   ports: 
+  #     - "8001:5432"
+  #   environment:
+  #     - POSTGRES_PASSWORD=superuserpassword
