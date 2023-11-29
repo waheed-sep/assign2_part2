@@ -18,8 +18,6 @@ After defining the `docker-compose.yml`, then I ran the `docker-compose config` 
 4. In this step, docker scaling feature was added, and web services was scaled to 3 instances. The output is given below.
 ![Docker compose create](/assets/docker_desktop_scale_ui.png)<br><br>
 
-**NOTE:** I could't completely understood the Grefana/Prometheuse and Docker Volume (For backup strategy), that's I couldn't cover them.
-
 
 
 
